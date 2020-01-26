@@ -13,21 +13,25 @@ class MyMathTest {
 	// 1,2,3 => 6
 	MyMath myMath = new MyMath(); 
 	
+	// runs before any test case
 	@Before
 	public void before() {
 		System.out.println("Before");
 	}
 	
+	// runs after any test case
 	@After
 	public void after() {
 		System.out.println("After");
 	}
 	
+	// runs at the beginning of the class
 	@BeforeClass
 	public static void beforeClass() {
 		System.out.println("Before Class");
 	}
 	
+	// runs at the end of the class
 	@AfterClass
 	public static void afterClass() {
 		System.out.println("After Class");
